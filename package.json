@@ -1,0 +1,22 @@
+{
+  "name": "processingjs_electron_test",
+  "version": "1.0.0",
+  "description": "test of processing.js with electron",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node_modules/.bin/electron .",
+    "package": "run-s package:exe package:installer",
+    "package:exe": "node build.js",
+    "package:installer": "node installer.js"
+  },
+  "keywords": [],
+  "author": "shisoAqron",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^2.0.8",
+    "electron-packager": "^12.1.1",
+    "electron-winstaller": "^2.6.4",
+    "npm-run-all": "^4.1.3"
+  }
+}
